@@ -405,7 +405,6 @@ footer {
     text-align: center;
     margin: 0 auto;
     padding: 0;
-    width: 100vw;
   }
 
   /* HEADER */
@@ -551,7 +550,7 @@ footer {
 
   .soup-limited-text {
     width: 90%;
-    padding: 24px;
+    padding: 0;
     margin: 0 auto;
   }
 
@@ -573,7 +572,10 @@ footer {
 
   .soup-pic {
     margin-bottom: 24px;
+    width: 80%;
+    height: 80%;
   }
+
 
   .soup-basic-text {
     height: 100%;
