@@ -337,17 +337,16 @@ label {
   width: 100%;
   margin: 40px auto;
   display: grid;
-  grid-template-columns: 300px 1fr;
-  text-align: center;
+  grid-template-columns: 30% 1fr;
 }
 
 input {
-  width: 40%;
+  width: 70%;
   margin: 8px 0 0 16px;
 }
 
 textarea {
-  width: 40%;
+  width: 70%;
   height: 90%;
   margin: 16px 0 0 16px;
 }
