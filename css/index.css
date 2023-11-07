@@ -408,6 +408,7 @@ footer {
 
   header {
     width: 100%;
+    margin: 0 auto;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -425,6 +426,7 @@ footer {
   /* MAIN */
   main {
     width: 100%;
+    margin: 0 auto;
     height: 400px;
     background-image: url(../img/soup-hero.jpg);
     background-repeat: no-repeat;
