@@ -31,14 +31,14 @@ nav {
   font-family: "fot-tsukubrdgothic-std", sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 1000px;
+  width: 80%;
   margin: 0 auto;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 3%;
   font-size: 18px;
 }
 
@@ -73,7 +73,8 @@ address {
 
 /* HEADER */
 header {
-  height: 80px;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -82,7 +83,8 @@ header {
 .header-text {
   display: flex;
   align-items: center;
-  gap: 40px;
+  text-wrap: nowrap;
+  gap: 10%;
 }
 
 h1 {
@@ -91,7 +93,7 @@ h1 {
 
 /* MAIN */
 main {
-  width: auto;
+  width: 100%;
   height: 800px;
   background-image: url(../img/soup-hero.jpg);
   background-repeat: no-repeat;
@@ -103,13 +105,14 @@ h2 {
   color: #fff;
   font-size: 4rem;
   position: absolute;
-  top: 160px;
-  right: 160px;
+  top: 24%;
+  right: 16%;
   text-shadow: 2px 2px 4px gray;
 }
 
 /* MAIN-NAV */
 .main-nav {
+  width: 70%;
   border-bottom: 1px dashed #35432c;
 }
 
@@ -123,15 +126,16 @@ h2 {
 }
 
 .concept-container {
-  width: 1200px;
-  height: 240px;
+  width: 50%;
+  height: 80%;
   margin: 16px auto;
   background: #35432c;
+  padding: 16px 0 32px 0;
 }
 
 .concept-container h4 {
   color: #fff;
-  line-height: 4;
+  line-height: 3;
   font-size: 24px;
 }
 
@@ -146,7 +150,7 @@ h2 {
 }
 
 .menu-container {
-  width: 1000px;
+  width: 70%;
   margin: 32px auto;
 }
 
@@ -156,12 +160,11 @@ h2 {
   display: flex;
   display: inline-block;
   align-items: center;
-  gap: 16px;
   padding: 16px;
 }
 
 .menu-title-text {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 /* MENU SOUP */
@@ -185,7 +188,6 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 24px;
   position: relative;
   padding: 24px;
   border-bottom: 1px dashed #35432c;
@@ -193,8 +195,8 @@ h2 {
 
 .limited-icon {
   position: absolute;
-  top: 40px;
-  left: 40px;
+  top: 5%;
+  left: 5%;
 }
 
 .soup-limited-text {
@@ -219,8 +221,8 @@ h2 {
 
 .soup-item {
   padding: 16px;
-  width: 400px;
-  height: 560px;
+  width: 40%;
+  height: 100%;
   border-right: 1px dashed #35432c;
   border-bottom: 1px dashed #35432c;
   text-align: center;
@@ -235,7 +237,7 @@ h2 {
 }
 
 .soup-basic-text {
-  height: 200px;
+  height: 50%;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -263,20 +265,23 @@ h2 {
 .drink {
   margin: 24px auto;
   border: 1px solid #35432c;
-  width: 480px;
-  height: 400px;
+  width: 40%;
+  height: 40%;
 }
 
 .drink-container {
   margin: 0 auto;
   display: flex;
-  justify-content: space-around;
+  justify-content: start;
 }
 
 .drink-item {
-  width: 480px;
+  width: 100%;
   margin: 0 auto;
-  padding: 16px 0 0 60px;
+  text-align: start;
+  padding-left: 20%;
+  padding-bottom: 10%;
+  
 }
 
 .drink-img {
@@ -285,10 +290,11 @@ h2 {
 
 /* ACCESS */
 .access {
-  width: 1000px;
-  height: 400px;
+  width: 70%;
+  height: 100%;
   border: 1px solid #35432c;
   margin: 32px auto;
+  padding-bottom: 2%;
 }
 
 .access-container {
@@ -312,8 +318,8 @@ h2 {
 
 /* CONTACT */
 .contact {
-  width: 1000px;
-  height: 420px;
+  width: 70%;
+  height: 100%;
   border: 1px solid #35432c;
   margin: 32px auto;
   text-align: center;
@@ -328,7 +334,7 @@ label {
 }
 
 .form {
-  width: 800px;
+  width: 100%;
   margin: 40px auto;
   display: grid;
   grid-template-columns: 300px 1fr;
@@ -336,21 +342,20 @@ label {
 }
 
 input {
-  width: 320px;
-  height: 20px;
+  width: 40%;
   margin: 8px 0 0 16px;
 }
 
 textarea {
-  width: 320px;
-  height: 60px;
+  width: 40%;
+  height: 90%;
   margin: 16px 0 0 16px;
 }
 
 button {
   text-align: center;
-  width: 160px;
-  height: 40px;
+  width: 20%;
+  height: 10%;
   font-family: "fot-tsukubrdgothic-std", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -366,6 +371,8 @@ button:hover {
 
 /* FOOTER */
 footer {
+  width: 100%;
+  height: 100%;
   background: #35432c;
   color: #fff;
   text-align: center;
@@ -394,11 +401,14 @@ footer {
 }
 
 
-@media (max-width:768px) {
+@media screen and (max-width:768px) {
   body {
     text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    width: 90%;
   }
-  
+
   /* HEADER */
   h1 {
     padding-top: 16px;
@@ -409,75 +419,95 @@ footer {
   header {
     width: 100%;
     margin: 0 auto;
-    height: 200px;
+    height: auto;
     display: flex;
     flex-direction: column;
   }
 
   .header-logo {
-    width: 240px;
-    height: 50px;
+    width: 80%;
   }
 
   .header-text {
     margin: -40px 0 -16px 0;
+    padding: 0;
   }
 
   /* MAIN */
   main {
     width: 100%;
-    margin: 0 auto;
-    height: 400px;
     background-image: url(../img/soup-hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
+
   h2 {
     color: #fff;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    text-wrap: nowrap;
     text-shadow: 2px 2px 4px gray;
     text-align: center;
   }
+
   /* NAV */
   nav {
-    width: auto;
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
   }
+
+  nav ul {
+    width: 90%;
+    text-align: center;
+    margin: 16px auto;
+    padding: 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+
+
+
   /* CONCEPT */
   .concept {
     text-align: center;
+
   }
-  
+
   .concept-container {
-    width: 400px;
-    height: 320px;
+    width: 70%;
+    height: 100%;
     margin: 16px auto;
     padding: 16px 24px;
     background: #35432c;
   }
-  
+
   .concept-container h4 {
     color: #fff;
-    line-height: 5;
+    line-height: 2;
     font-size: 20px;
   }
-  
+
   .concept-container p {
     color: #fff;
     line-height: 2;
   }
+
   /* MENU */
   .menu {
     margin: 32px auto;
+
   }
-  
+
   .menu-container {
-    width: 600px;
+    width: 90%;
     margin: 32px auto;
     position: relative;
   }
-  
+
   .soup-title {
     position: absolute;
     top: 0;
@@ -493,179 +523,196 @@ footer {
 
 
   /* LIMITED MENU */
-.soup-limited {
-  display: block;
-  justify-content: space-around;
-  align-items: center;
-  gap: 24px;
-  position: relative;
-  padding: 24px;
-  border-bottom: 1px dashed #35432c;
-}
+  .soup-limited {
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    padding: 24px;
+    border-bottom: 1px dashed #35432c;
+  }
 
-.soup-limited-pic {
-  margin-top: 80px;
-}
+  .soup-limited-pic {
+    margin-top: 80px;
+  }
 
-.limited-icon {
-  position: absolute;
-  top: 120px;
-  left: 80px;
-}
+  .limited-icon {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 10%;
+    left: 10%;
+  }
 
-.soup-limited-text {
-  width: 400px;
-  padding: 24px;
-  margin: 0 auto;
-}
+  .pumpkin-soup {
+    width: 80%;
+    height: 80%;
+  }
 
-/* BASIC MENU */
-.soup-basic {
-  display: block;
-  justify-content: space-around;
-  align-items: center;
-}
+  .soup-limited-text {
+    width: 90%;
+    padding: 24px;
+    margin: 0 auto;
+  }
 
-.soup-item {
-  padding: 16px;
-  width: 500px;
-  margin: 16px auto;
-  height: 540px;
-  border-right: none;
-  border-bottom: 1px dashed #35432c;
-  text-align: center;
-  display: block;
+  /* BASIC MENU */
+  .soup-basic {
+    display: block;
+  }
 
-}
+  .soup-item {
+    padding: 16px;
+    width: 90%;
+    margin: 16px auto;
+    border-right: none;
+    border-bottom: 1px dashed #35432c;
+    text-align: center;
+    display: block;
 
-.soup-pic {
-  margin-bottom: 24px;
-}
+  }
 
-.soup-basic-text {
-  height: 200px;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
+  .soup-pic {
+    margin-bottom: 24px;
+  }
 
-.soup-basic .soup-item-text {
-  text-align: start;
-  margin-top: 32px;
-}
+  .soup-basic-text {
+    height: 100%;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
 
-.soup-basic .price {
-  font-size: 24px;
-  margin-top: 24px;
-}
+  .soup-basic .soup-item-text {
+    text-align: start;
+    margin-top: 32px;
+  }
 
-/* SIDE MENU */
-.soup-side ul {
-  display: block;
-  width: 240px;
-  margin: 0 auto 32px auto;
-  text-align: start;
-}
+  .soup-basic .price {
+    font-size: 24px;
+    margin-top: 24px;
+  }
 
-/* DRINK */
-.drink {
-  position: relative;
-  margin-top: 24px;
-  border: 1px solid #35432c;
-  width: 480px;
-  height: 400px;
-}
+  /* SIDE MENU */
+  .soup-side ul {
+    display: block;
+    width: 100%;
+    margin: 0 auto 32px auto;
+    text-align: start;
+  }
 
-.drink-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #35432c;
-  color: #fff;
-  display: block;
-  align-items: center;
-  gap: 0;
-  padding: 16px;
-}
+  /* DRINK */
+  .drink {
+    position: relative;
+    margin-top: 24px;
+    border: 1px solid #35432c;
+    width: 90%;
+  }
 
-.drink-container {
-  margin: 0 auto;
-  display: block;
-}
+  .drink-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #35432c;
+    color: #fff;
+    display: block;
+    align-items: center;
+    gap: 0;
+  }
 
-.drink-item {
-  width: 400px;
-  text-align: start;
-  margin-top: 80px;
-}
+  .drink-container {
+    display: block;
+  }
 
-/* ACCESS */
-.access {
-  width: 600px;
-  height: 600px;
-  border: 1px solid #35432c;
-  margin: 32px auto;
-}
+  .drink-item {
+    width: 90%;
+    margin-top: 80px;
+    padding:0 10% 10% 10%;
+  }
 
-.access-container {
-  display: block;
-}
+  .drink-item ul {
+    padding: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
 
-.access-text {
-  margin-top: 24px;
-  margin-right: 0;
-}
+  .illust {
+    width: 70%;
 
-.access-tel {
-  padding: 8px;
-}
+  }
 
-.access-address {
-  padding: 8px;
-}
+  /* ACCESS */
+  .access {
+    width: 90%;
+    border: 1px solid #35432c;
+    margin: 32px auto;
+  }
 
-/* CONTACT */
-.contact {
-  width: 600px;
-  height: 420px;
-  border: 1px solid #35432c;
-  margin: 32px auto;
-  text-align: center;
-}
+  .access-container {
+    display: block;
+  }
 
-.form {
-  width: 600px;
-  margin: 40px auto;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  text-align: start;
-}
+  iframe {
+    width: 80%;
+  }
 
-input {
-  width: 320px;
-  height: 20px;
-  margin: 8px 0 0 8px;
-}
+  .access-text {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
 
-textarea {
-  width: 320px;
-  height: 60px;
-  margin: 8px 0 0 8px;
-}
+  .access-tel {
+    padding: 8px;
+  }
 
-button {
-  text-align: center;
-  width: 160px;
-  height: 40px;
-  font-family: "fot-tsukubrdgothic-std", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  color: #fff;
-  background: #35432c;
-  border: none;
-}
+  .access-address {
+    padding: 8px;
+  }
+
+  /* CONTACT */
+  .contact {
+    width: 90%;
+    border: 1px solid #35432c;
+    margin: 32px auto;
+    text-align: center;
+
+  }
+
+  .form {
+    width: 100%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    text-align: start;
+  }
+
+  input {
+    width: 90%;
+    margin: 8px 0 0 8px;
+  }
+
+  textarea {
+    width: 90%;
+    margin: 8px 0 0 8px;
+  }
+
+  button {
+    text-align: center;
+    width: 50%;
+    font-family: "fot-tsukubrdgothic-std", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #fff;
+    background: #35432c;
+    border: none;
+  }
+
+  footer {
+    width: 100%;
+    
+  }
 
 }
