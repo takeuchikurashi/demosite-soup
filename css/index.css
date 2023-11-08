@@ -9,6 +9,7 @@ body {
   margin: 0;
   background: #FBFBF6;
   box-sizing: border-box;
+  text-align: center;
 }
 
 h1,
@@ -22,33 +23,34 @@ h4 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1rem;
   text-align: center;
-  margin-top: 32px;
+  margin-top: 24px;
 }
 
 nav {
   font-family: "fot-tsukubrdgothic-std", sans-serif;
   font-weight: 400;
   font-style: normal;
-  width: 80%;
+  width: 20%;
   margin: 0 auto;
 }
 
 nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 3%;
-  font-size: 18px;
+  display: block;
+  font-size: 0.8rem;
+  text-align: center;
+  padding: 0;
 }
 
 nav li {
   list-style: none;
+  margin: 0;
 }
 
 p {
   margin: 0;
-  font-size: 16px;
+  font-size: 0.5rem;
   line-height: 1.5;
   font-family: "fot-tsukubrdgothic-std", sans-serif;
   font-weight: 400;
@@ -60,6 +62,7 @@ li {
   font-family: "fot-tsukubrdgothic-std", sans-serif;
   font-weight: 400;
   font-style: normal;
+  /* text-align: start; */
 }
 
 a {
@@ -73,651 +76,178 @@ address {
 
 /* HEADER */
 header {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  width: 32%;
+  margin: 0 auto;
+  text-align: center;
 }
-
 .header-text {
-  display: flex;
-  align-items: center;
-  text-wrap: nowrap;
-  gap: 10%;
+  padding: 0;
+  width: 100%;
+  margin: 0 auto;
 }
 
-h1 {
-  margin-top: 16px;
+.header-logo {
+  width: 80%;
 }
 
 /* MAIN */
 main {
-  width: 100%;
-  height: 800px;
+  width: 32%;
+  height: 160px;
+  margin: 0 auto;
   background-image: url(../img/soup-hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
 }
-
 h2 {
-  color: #fff;
-  font-size: 4rem;
-  position: absolute;
-  top: 24%;
-  right: 16%;
-  text-shadow: 2px 2px 4px gray;
+  color: #FBFBF6;
+  text-align: center;
 }
 
 /* MAIN-NAV */
 .main-nav {
-  width: 70%;
   border-bottom: 1px dashed #35432c;
-}
-
-.main-nav a:hover {
-  color: #35432cb0;
 }
 
 /* CONCEPT */
 .concept {
-  text-align: center;
+  width: 32%;
+  margin: 0 auto;
 }
-
 .concept-container {
-  width: 50%;
-  height: 80%;
-  margin: 16px auto;
   background: #35432c;
-  padding: 16px 0 32px 0;
+  color: #FBFBF6;
+  margin-top: 2%;
+  padding: 8%;
+  /* text-align: start; */
 }
-
-.concept-container h4 {
-  color: #fff;
-  line-height: 3;
-  font-size: 24px;
-}
-
-.concept-container p {
-  color: #fff;
-  line-height: 2;
+h4 {
+  text-wrap: nowrap;
+  text-align: center;
+  padding-bottom: 8%;
+  font-size: 16%;
 }
 
 /* MENU */
 .menu {
-  margin: 32px auto;
+  width: 32%;
+  margin: 0 auto;
 }
-
 .menu-container {
-  width: 70%;
-  margin: 32px auto;
+  margin-top: 2%;
+  border: 1px solid #35432c;
+  position: relative;
 }
-
 .menu-title {
   background: #35432c;
-  color: #fff;
-  display: flex;
+  color: #FBFBF6;
+  padding: 2%;
+  text-align: start;
   display: inline-block;
-  align-items: center;
-  padding: 16px;
+
+}
+.soup-title {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.menu-title-text {
-  font-size: 24px;
-}
-
-/* MENU SOUP */
-.soup-container {
-  border: 1px solid #35432c;
-  margin-top: 32px;
-}
-
-.soup-item-title {
-  font-size: 24px;
-}
-
-.soup-item-title::before {
-  content: " ";
-  border-left: 8px solid #35432c;
-  padding-left: 0.5em;
-}
-
-/* LIMITED MENU */
-.soup-limited {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  padding: 24px;
+/* MENU ITEM */
+.soup-item {
+  padding: 16%;
   border-bottom: 1px dashed #35432c;
 }
-
 .limited-icon {
   position: absolute;
-  top: 5%;
-  left: 5%;
+  top: 20px;
+  left: 20px;
+  width: 20%;
+}
+.soup-item-title {
+  margin-top: 4%;
+  font-size: 0.7rem;
+}
+.soup-item-text {
+  margin-top: 2%;
+}
+.price {
+  margin-top: 4%;
+  font-size: 0.7rem;
 }
 
-.soup-limited-text {
-  padding: 24px;
-}
-
-.soup-limited-text .soup-item-text {
-  margin-top: 32px;
-}
-
-.soup-limited-text .price {
-  margin-top: 32px;
-  font-size: 24px;
-}
-
-/* BASIC MENU */
-.soup-basic {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.soup-item {
-  padding: 16px;
-  width: 40%;
-  height: 100%;
-  border-right: 1px dashed #35432c;
-  border-bottom: 1px dashed #35432c;
-  text-align: center;
+/* SIDE */
+.soup-side {
+  font-size: 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-}
-
-.soup-pic {
-  margin-bottom: 24px;
-}
-
-.soup-basic-text {
-  height: 50%;
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-.soup-basic .soup-item-text {
-  text-align: start;
-  margin-top: 32px;
-}
-
-.soup-basic .price {
-  font-size: 24px;
-  margin-top: 24px;
-}
-
-/* SIDE MENU */
-.soup-side ul {
-  display: flex;
-  justify-content: space-around;
 }
 
 /* DRINK */
 .drink {
-  margin: 24px auto;
+  margin-top: 2%;
   border: 1px solid #35432c;
-  width: 40%;
-  height: 40%;
+  position: relative;
 }
-
-.drink-container {
-  margin: 0 auto;
-  display: flex;
-  justify-content: start;
+.drink-title {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 .drink-item {
-  width: 100%;
-  margin: 0 auto;
-  text-align: start;
-  padding-left: 20%;
-  padding-bottom: 10%;
-  
-}
-
-.drink-img {
-  text-align: center;
+  font-size: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ACCESS */
 .access {
-  width: 70%;
-  height: 100%;
-  border: 1px solid #35432c;
-  margin: 32px auto;
-  padding-bottom: 2%;
+  width: 32%;
+  margin: 0 auto;
 }
 
 .access-container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 60px;
+  margin-top: 2%;
+  border: 1px solid #35432c;
+  padding: 4%;
 }
-
-.access-text {
-  margin-right: 32px;
+iframe {
+  margin-top: 4%;
 }
-
-.access-tel {
-  padding: 8px;
-}
-
 .access-address {
-  padding: 8px;
+  margin-top: 4%;
 }
 
 /* CONTACT */
 .contact {
-  width: 70%;
-  height: 100%;
-  border: 1px solid #35432c;
-  margin: 32px auto;
-  text-align: center;
+  width: 32%;
+  margin: 0 auto;
 }
-
 .contact-container {
-  padding: 32px;
+  margin-top: 2%;
+  border: 1px solid #35432c;
+  padding: 4%;
 }
-
-label {
-  padding: 8px;
-}
-
-.form {
-  width: 100%;
-  margin: 40px auto;
-  display: grid;
-  grid-template-columns: 30% 1fr;
-}
-
-input {
-  width: 70%;
-  margin: 8px 0 0 16px;
-}
-
-textarea {
-  width: 70%;
-  height: 90%;
-  margin: 16px 0 0 16px;
-}
-
 button {
-  text-align: center;
-  width: 20%;
-  height: 10%;
-  font-family: "fot-tsukubrdgothic-std", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 18px;
-  color: #fff;
   background: #35432c;
   border: none;
-}
-
-button:hover {
-  background: #35432cb0;
+  color: #FBFBF6;
 }
 
 /* FOOTER */
 footer {
-  width: 100%;
-  height: 100%;
+  width: 32%;
+  margin: 0 auto;
+  padding: 2%;
   background: #35432c;
-  color: #fff;
-  text-align: center;
-  padding-bottom: 32px;
+  
 }
-
-.footer-nav ul {
-  padding-top: 32px;
-}
-
 .footer-nav li {
-  color: #fff;
+  color: #FBFBF6;
 }
-
-.footer-nav li:hover {
-  color: rgba(216, 241, 201, 0.69)
+.footer-text {
+  color: #FBFBF6;
 }
-
-.header-address {
-  line-height: 2;
-  margin: 32px auto;
-}
-
 .copyright {
-  padding-top: 32px;
-}
-
-
-@media screen and (max-width:768px) {
-  body {
-    text-align: center;
-    margin: 0 auto;
-    padding: 0;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  /* HEADER */
-  h1 {
-    padding-top: 16px;
-    padding-bottom: 0;
-    text-align: center;
-    width: 100%;
-  }
-
-  header {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .header-logo {
-    width: 70%;
-  }
-
-  .header-text {
-    display: block;
-    padding: 0;
-  }
-
-  /* MAIN */
-  main {
-    max-width: 100%;
-    background-image: url(../img/soup-hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  h2 {
-    color: #fff;
-    font-size: 2rem;
-    text-wrap: nowrap;
-    text-shadow: 2px 2px 4px gray;
-    text-align: center;
-  }
-
-  /* NAV */
-  nav {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  nav ul {
-    max-width: 100%;
-    text-align: center;
-    margin: 16px auto;
-    padding: 0;
-  }
-
-  nav ul li {
-    max-width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 16px;
-  }
-
-
-
-  /* CONCEPT */
-  .concept {
-    text-align: center;
-
-  }
-
-  .concept-container {
-    width: 70%;
-    height: 100%;
-    margin: 16px auto;
-    padding: 16px 24px;
-    background: #35432c;
-  }
-
-  .concept-container h4 {
-    color: #fff;
-    line-height: 2;
-    font-size: 20px;
-  }
-
-  .concept-container p {
-    color: #fff;
-    line-height: 2;
-  }
-
-  /* MENU */
-  .menu {
-    margin: 32px auto;
-
-  }
-
-  .menu-container {
-    width: 90%;
-    margin: 32px auto;
-    position: relative;
-  }
-
-  .soup-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #35432c;
-    color: #fff;
-    display: flex;
-    display: inline-block;
-    align-items: start;
-    gap: 16px;
-    padding: 16px;
-  }
-
-
-  /* LIMITED MENU */
-  .soup-limited {
-    display: block;
-    justify-content: space-around;
-    align-items: center;
-    gap: 24px;
-    position: relative;
-    padding: 24px;
-    border-bottom: 1px dashed #35432c;
-  }
-
-  .soup-limited-pic {
-    margin-top: 80px;
-  }
-
-  .limited-icon {
-    position: absolute;
-    width: 20%;
-    height: 20%;
-    top: 10%;
-    left: 10%;
-  }
-
-  .pumpkin-soup {
-    width: 80%;
-    height: 80%;
-  }
-
-  .soup-limited-text {
-    width: 90%;
-    padding: 0;
-    margin: 0 auto;
-  }
-
-  /* BASIC MENU */
-  .soup-basic {
-    display: block;
-  }
-
-  .soup-item {
-    padding: 16px;
-    width: 90%;
-    margin: 16px auto;
-    border-right: none;
-    border-bottom: 1px dashed #35432c;
-    text-align: center;
-    display: block;
-
-  }
-
-  .soup-pic {
-    margin-bottom: 24px;
-    width: 80%;
-    height: 80%;
-  }
-
-
-  .soup-basic-text {
-    height: 100%;
-    padding: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .soup-basic .soup-item-text {
-    text-align: start;
-    margin-top: 32px;
-  }
-
-  .soup-basic .price {
-    font-size: 24px;
-    margin-top: 24px;
-  }
-
-  /* SIDE MENU */
-  .soup-side ul {
-    display: block;
-    width: 100%;
-    margin: 0 auto 32px auto;
-    text-align: start;
-  }
-
-  /* DRINK */
-  .drink {
-    position: relative;
-    margin-top: 24px;
-    border: 1px solid #35432c;
-    width: 90%;
-  }
-
-  .drink-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #35432c;
-    color: #fff;
-    display: block;
-    align-items: center;
-    gap: 0;
-  }
-
-  .drink-container {
-    display: block;
-  }
-
-  .drink-item {
-    width: 90%;
-    margin-top: 80px;
-    padding:0 10% 10% 10%;
-  }
-
-  .drink-item ul {
-    padding: 0;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .illust {
-    width: 70%;
-
-  }
-
-  /* ACCESS */
-  .access {
-    width: 90%;
-    border: 1px solid #35432c;
-    margin: 32px auto;
-  }
-
-  .access-container {
-    display: block;
-  }
-
-  iframe {
-    width: 80%;
-  }
-
-  .access-text {
-    margin-right: 0;
-    margin-bottom: 8px;
-  }
-
-  .access-tel {
-    padding: 8px;
-  }
-
-  .access-address {
-    padding: 8px;
-  }
-
-  /* CONTACT */
-  .contact {
-    width: 90%;
-    border: 1px solid #35432c;
-    margin: 32px auto;
-    text-align: center;
-
-  }
-
-  .form {
-    width: 100%;
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    text-align: start;
-  }
-
-  input {
-    width: 90%;
-    margin: 8px 0 0 8px;
-  }
-
-  textarea {
-    width: 90%;
-    margin: 8px 0 0 8px;
-  }
-
-  button {
-    text-align: center;
-    width: 50%;
-    font-family: "fot-tsukubrdgothic-std", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 18px;
-    color: #fff;
-    background: #35432c;
-    border: none;
-  }
-
-  footer {
-    width: 100%;
-    
-  }
-
+  color: #FBFBF6;
+  font-size: 0.3rem;
 }
