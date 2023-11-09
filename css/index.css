@@ -87,7 +87,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background: pink; */
 }
 
 .header-text {
@@ -369,7 +368,7 @@ footer {
   }
 
   .header-logo {
-    max-width: 50%;
+    max-width: 80%;
   }
 
   .header-text {
