@@ -183,19 +183,20 @@ h4 {
 
 .limited-item {
   display: grid;
-  grid-template-columns: 1% 1fr 1fr;
+  grid-template-columns: 10% 1fr 1fr;
   align-items: center;
   padding: 8%;
 
 }
 
 .pumpkin-soup {
-  width: 80%;
+  max-width: 80%;
 }
 
 .limited-icon {
   z-index: 10;
   margin-top: -200px;
+  max-width: 100%;
 }
 
 .soup-item-title {
@@ -228,10 +229,15 @@ h4 {
   padding: 8%;
 }
 
+.soup-pic {
+  max-width: 100%;
+}
+
 /* SIDE */
 .soup-side {
   font-size: 1rem;
 }
+
 .soup-side ul {
   display: flex;
   justify-content: center;
@@ -276,6 +282,7 @@ h4 {
 
 iframe {
   margin-top: 4%;
+  max-width: 100%;
 }
 
 .access-address {
@@ -338,4 +345,144 @@ footer {
 .copyright {
   color: #FBFBF6;
   font-size: 0.8rem;
+}
+
+@media (max-width:768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    width: 100%;
+    margin: 0;
+    background: #FBFBF6;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* HEADER */
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background: blue; */
+  }
+
+  .header-logo {
+    max-width: 80%;
+  }
+
+  .header-text {
+    /* background: pink; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sns-icon {
+    display: flex;
+    gap: 8%;
+    margin-top: 4%;
+  }
+
+  /* MAIN */
+  h2 {
+    max-width: 100%;
+  }
+
+  main {
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+
+  /* CONCEPT */
+
+  .concept {
+    width: 80%;
+    text-align: center;
+  }
+
+  h4 {
+    max-width: 100%;
+    /* background: pink; */
+    font-size: 0.9rem;
+  }
+
+  .concept p {
+    font-size: 0.8rem;
+  }
+
+  /* MENU */
+  .menu {
+    width: 80%;
+  }
+
+  .menu-title {
+    position: static;
+    width: 80%;
+  }
+
+  .limited-item {
+    display: block;
+  }
+
+  .soup-basic {
+    display: block;
+  }
+
+  /* SIDE */
+  .soup-side ul {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    font-size: 0.8rem;
+  }
+
+  /* DRINk */
+  .drink {
+    width: 100%;
+  }
+.drink-item {
+  padding: 0;
+  text-align: start;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* ACCESS */
+.access {
+  width: 80%;
+}
+  iframe {
+    max-width: 100%;
+  }
+/* CONTACT */
+.contact {
+  width: 80%;
+}
+.form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+label {
+  margin: 0;
+}
+
+  footer {
+    max-width: 100%;
+  }
+  footer .sns-icon {
+    display: flex;
+    justify-content:center ;
+    gap: 4%;
+  }
 }
