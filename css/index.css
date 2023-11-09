@@ -30,7 +30,7 @@ h4 {
 h3 {
   font-size: 1.4rem;
   text-align: center;
-  margin-top: 24px;
+  margin-top: 4%;
 }
 
 nav {
@@ -51,6 +51,7 @@ nav ul {
 nav li {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 p {
@@ -67,6 +68,8 @@ li {
   font-family: "fot-tsukubrdgothic-std", sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -105,13 +108,15 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 h2 {
   color: #FBFBF6;
   font-size: 2.5rem;
+  max-width: 100%;
+  text-shadow: 2px 2px 4px gray;
 }
 
 /* MAIN-NAV */
@@ -126,6 +131,10 @@ h2 {
   gap: 8%;
 }
 
+.main-nav a:hover {
+  color: #35432cb0;
+}
+
 /* CONCEPT */
 .concept {
   width: 60%;
@@ -134,7 +143,7 @@ h2 {
 
 .concept-container {
   background: #35432c;
-  color: #fff;
+  color: #FBFBF6;
   margin-top: 2%;
   padding: 8%;
 }
@@ -163,7 +172,7 @@ h4 {
 
 .menu-title {
   background: #35432c;
-  color: #fff;
+  color: #FBFBF6;
   padding: 2%;
   text-align: start;
   width: 20%;
@@ -171,6 +180,12 @@ h4 {
 
 .soup-title-text {
   font-size: 1.3rem;
+}
+
+.soup-item-title::before {
+  content: " ";
+  border-left: 8px solid #35432c;
+  padding-left: 0.5em;
 }
 
 /* MENU ITEM */
@@ -185,7 +200,6 @@ h4 {
   grid-template-columns: 10% 1fr 1fr;
   align-items: center;
   padding: 8%;
-
 }
 
 .pumpkin-soup {
@@ -194,8 +208,8 @@ h4 {
 
 .limited-icon {
   z-index: 10;
-  margin-top: -200px;
   max-width: 100%;
+  margin: 50% 0 300% 100%;
 }
 
 .soup-item-title {
@@ -244,6 +258,16 @@ h4 {
 }
 
 /* DRINK */
+.drink-illust {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.illust {
+  width: 100%;
+}
+
 .drink {
   width: 50%;
   margin-top: 2%;
@@ -282,6 +306,10 @@ h4 {
 iframe {
   margin-top: 4%;
   max-width: 100%;
+}
+
+.access-text {
+  margin-top: 4%;
 }
 
 .access-address {
@@ -324,6 +352,10 @@ button {
   padding: 2%;
 }
 
+button:hover {
+  background: #35432cb0;
+}
+
 /* FOOTER */
 footer {
   width: 100%;
@@ -334,6 +366,10 @@ footer {
 
 .footer-nav li {
   color: #FBFBF6;
+}
+
+.footer-nav li:hover {
+  color: rgba(216, 241, 201, 0.69)
 }
 
 .footer-text {
@@ -364,7 +400,6 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* background: blue; */
   }
 
   .header-logo {
@@ -401,15 +436,14 @@ footer {
   }
 
   /* CONCEPT */
-
   .concept {
-    width: 80%;
+    width: 90%;
     text-align: center;
   }
 
   h4 {
     max-width: 100%;
-    /* background: pink; */
+    text-wrap: wrap;
     font-size: 0.9rem;
   }
 
@@ -424,6 +458,7 @@ footer {
 
   .menu-title {
     position: static;
+    text-align: center;
     width: 80%;
   }
 
@@ -431,8 +466,17 @@ footer {
     display: block;
   }
 
+  .limited-icon {
+    margin: 0;
+  }
+
   .soup-basic {
     display: block;
+  }
+
+  .soup-item-1,
+  .soup-item-2 {
+    border-right: none;
   }
 
   /* SIDE */
@@ -444,44 +488,58 @@ footer {
   }
 
   /* DRINk */
+  .drink-illust {
+    display: block;
+  }
+
+  .illust {
+    width: 50%;
+  }
+
   .drink {
     width: 100%;
   }
-.drink-item {
-  padding: 0;
-  text-align: start;
-  font-size: 0.8rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
 
-/* ACCESS */
-.access {
-  width: 80%;
-}
+  .drink-item {
+    padding: 0;
+    text-align: start;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* ACCESS */
+  .access {
+    width: 80%;
+  }
+
   iframe {
     max-width: 100%;
   }
-/* CONTACT */
-.contact {
-  width: 80%;
-}
-.form {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-label {
-  margin: 0;
-}
+
+  /* CONTACT */
+  .contact {
+    width: 80%;
+  }
+
+  .form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 0;
+  }
 
   footer {
     max-width: 100%;
   }
+
   footer .sns-icon {
     display: flex;
-    justify-content:center ;
+    justify-content: center;
     gap: 4%;
   }
 }
